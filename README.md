@@ -32,11 +32,13 @@ There is no per-transaction platform fee. Network fees of the Solana blockchain 
 
 ## Download
 
-Get the latest build from the [Releases](../../releases) page after purchase at https://solarchitect.xyz.
+The app is available after purchase at https://solarchitect.xyz. Each buyer receives a personal download link by email.
+
+The installers themselves are not published in this repository. The [Releases](../../releases) page contains only release notes and SHA-256 checksums for each version, so you can verify the file you received.
 
 ## Verify your download
 
-Each release lists a SHA-256 checksum for every file. Compare it with the checksum of the file you downloaded.
+Each release lists a SHA-256 checksum for every file. Compare it with the checksum of the file you downloaded from your personal link.
 
 macOS:
 
