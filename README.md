@@ -3,7 +3,7 @@
 No-code desktop app for creating Solana tokens. Non-custodial: your private keys never leave your device.
 
 Website: https://solarchitect.xyz
-X / Twitter: https://x.com/SolArchitectxyz
+X/Twitter: https://x.com/SolArchitectxyz
 
 > This repository hosts release information, checksums and issue tracking. The application source code is not published here.
 
