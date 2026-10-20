@@ -64,9 +64,9 @@ If the result does not match the checksum in the release notes, do not run the f
 
 | File | SHA-256 |
 |---|---|
-| SolArchitect-<version>-windows.exe | `<sha256>` |
-| SolArchitect-<version>-macos.dmg | `<sha256>` |
-| SolArchitect-<version>-linux.AppImage | `<sha256>` |
+| SolArchitect_0.1.0_x64-setup.exe | `66415da32528a5b9c46e2eed6362868ae2c31874b16786553d01b4fe08fd95f3` |
+| SolArchitect_0.1.0_aarch64.dmg | `8a6e93d10f1c195ceddbfe53792c9b8304540c77426fed38073462498acc31dd` |
+| SolArchitect_0.1.0_amd64.AppImage | `8e21f7ba9ce475c4a2fce138122659273347d3df69d8aaaf476be3dd4b63284e` |
 
 ## Security warnings from your operating system
 
