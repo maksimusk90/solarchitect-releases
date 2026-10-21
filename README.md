@@ -3,7 +3,7 @@
 No-code desktop app for creating Solana tokens. Non-custodial: your private keys never leave your device.
 
 Website: https://solarchitect.xyz
-X/Twitter: https://x.com/SolArchitectxyz
+X / Twitter: https://x.com/SolArchitectxyz
 
 > This repository hosts release information, checksums and issue tracking. The application source code is not published here.
 
@@ -18,7 +18,7 @@ SolArchitect lets you create a Solana token through a simple interface, with no 
 - Three-tier metadata storage: Arweave, then IPFS, then local cache as a fallback
 - Wallets: Phantom, Solflare, Backpack
 - 13 interface languages
-- Platforms: Windows, macOS, Linux
+- Platforms: Windows (x64), macOS (Apple Silicon), Linux (x64)
 - Non-custodial: transactions are signed in your wallet, keys stay on your device
 
 ## Pricing
@@ -43,30 +43,26 @@ Each release lists a SHA-256 checksum for every file. Compare it with the checks
 macOS:
 
 ```
-shasum -a 256 SolArchitect-<version>.dmg
+shasum -a 256 SolArchitect_<version>_aarch64.dmg
 ```
 
 Linux:
 
 ```
-sha256sum SolArchitect-<version>.AppImage
+sha256sum SolArchitect_<version>_amd64.AppImage
 ```
 
 Windows (PowerShell):
 
 ```
-Get-FileHash .\SolArchitect-<version>.exe -Algorithm SHA256
+Get-FileHash .\SolArchitect_<version>_x64-setup.exe -Algorithm SHA256
 ```
 
 If the result does not match the checksum in the release notes, do not run the file and contact us.
 
 ## Checksums
 
-| File | SHA-256 |
-|---|---|
-| SolArchitect_0.1.0_x64-setup.exe | `66415da32528a5b9c46e2eed6362868ae2c31874b16786553d01b4fe08fd95f3` |
-| SolArchitect_0.1.0_aarch64.dmg | `8a6e93d10f1c195ceddbfe53792c9b8304540c77426fed38073462498acc31dd` |
-| SolArchitect_0.1.0_amd64.AppImage | `8e21f7ba9ce475c4a2fce138122659273347d3df69d8aaaf476be3dd4b63284e` |
+Checksums for every version are listed in the notes of the matching release on the [Releases](../../releases) page.
 
 ## Security warnings from your operating system
 
