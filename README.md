@@ -15,7 +15,7 @@ SolArchitect lets you create a Solana token through a simple interface, with no 
 
 - Token standards: SPL and Token-2022
 - Metaplex metadata
-- Three-tier metadata storage: Arweave, then IPFS, then local cache as a fallback
+- Permanent metadata storage on Arweave via Irys
 - Wallets: Phantom, Solflare, Backpack
 - 13 interface languages
 - Platforms: Windows (x64), macOS (Apple Silicon), Linux (x64)
