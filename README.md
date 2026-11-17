@@ -5,7 +5,7 @@ No-code desktop app for creating Solana tokens. Non-custodial: your private keys
 Website: https://solarchitect.xyz
 X/Twitter: https://x.com/SolArchitectxyz
 
-> This repository hosts release information, checksums and issue tracking. The application source code is not published here.
+This repository hosts release information, checksums and issue tracking. The application source code is not published here.
 
 ## What it is
 
@@ -17,6 +17,7 @@ SolArchitect lets you create a Solana token through a simple interface, with no 
 - Metaplex metadata
 - Permanent metadata storage on Arweave via Irys
 - Wallets: Phantom, Solflare, Backpack
+- Rent Reclaimer: find empty token accounts, close them and get the rent SOL back
 - 13 interface languages
 - Platforms: Windows (x64), macOS (Apple Silicon), Linux (x64)
 - Non-custodial: transactions are signed in your wallet, keys stay on your device
@@ -34,39 +35,45 @@ There is no per-transaction platform fee. Network fees of the Solana blockchain 
 
 The app is available after purchase at https://solarchitect.xyz. Each buyer receives a personal download link by email.
 
-The installers themselves are not published in this repository. The [Releases](../../releases) page contains only release notes and SHA-256 checksums for each version, so you can verify the file you received.
+The installers themselves are not published in this repository. The Releases page contains only release notes and SHA-256 checksums for each version, so you can verify the file you received.
 
 ## Verify your download
 
 Each release lists a SHA-256 checksum for every file. Compare it with the checksum of the file you downloaded from your personal link.
 
-macOS:
+**Windows (PowerShell):**
 
+```powershell
+Get-FileHash .\SolArchitect_<version>_x64-setup.exe -Algorithm SHA256
 ```
+
+**macOS:**
+
+```bash
 shasum -a 256 SolArchitect_<version>_aarch64.dmg
 ```
 
-Linux:
+**Linux:**
 
-```
+```bash
 sha256sum SolArchitect_<version>_amd64.AppImage
-```
-
-Windows (PowerShell):
-
-```
-Get-FileHash .\SolArchitect_<version>_x64-setup.exe -Algorithm SHA256
 ```
 
 If the result does not match the checksum in the release notes, do not run the file and contact us.
 
-## Checksums
+## First launch
 
-Checksums for every version are listed in the notes of the matching release on the [Releases](../../releases) page.
+- **Windows:** if SmartScreen shows a warning, click "More info", then "Run anyway" (only after the checksum matches).
+- **macOS:** if the system says the app cannot be opened, right-click the app, choose "Open", and confirm. If macOS reports the file as damaged, run this in Terminal after checking the checksum: `xattr -cr /Applications/SolArchitect.app`
+- **Linux:** make the file executable first: `chmod +x SolArchitect_<version>_amd64.AppImage`
 
 ## Security warnings from your operating system
 
 Current builds are not yet code-signed with a paid developer certificate. Because of this, Windows SmartScreen or macOS Gatekeeper may show a warning on first launch. Check the checksum above before you proceed. Code signing is planned.
+
+## Checksums
+
+Checksums for every version are listed in the notes of the matching release on the Releases page.
 
 ## Support and bug reports
 
